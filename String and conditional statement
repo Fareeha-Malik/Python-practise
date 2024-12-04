@@ -1,0 +1,49 @@
+str="This is my first string."
+str2="This is the string \t that containslines and i\n want to print it in the next line "
+print(str,str2)
+#escape sequence chracter is used to format text in python and other languages. \n for next line, \t for tab space
+#space, digits and all special characters are always considered and counted in length funcion of python
+final= str+str2
+print(final)
+print(len(final))
+#indexing is about referencing a character in the string, the common example is here
+#now if we want to access any of the character in string, we have to enter variable name and then big brackets and the number of character we want to show or get access, remember we cannot change the character, in python character are indexed from number 0
+str0= "Fareeha Malik"
+ch=str0[10]
+print(ch)
+#slicing
+raw="slicing is just like cutting/accessing a string into pieces and print a specific piece of string"
+print(raw[4:15])
+#string name[starting index: ending index, remember ending index is not printed]
+#[starting-inder:ending-index, starting index: (kx nae likho ghe to string k length tk print hoghi means last chracter tk)]
+print(raw[1:])
+print(raw[:len(raw)])
+#end slicing, here we count the character from last and add - minus with digit
+print(raw[-14:-10])
+#string function
+print(raw.endswith("string"))#returns true if the string ends with the defined character
+print(raw.endswith("specific="))#returns false if the string does not ends with the defined character
+print(raw.capitalize())#capitalazie a special character in the given string,or the cmplt string
+print(raw.count("special"))#count the defined word/character in the string
+print(raw.replace("specific","special"))#replace the old character with the new defined one, here 1st word should be old, and the 2nd word should be the word that u want to enter
+print(raw.find("string"))#finds the special character or string in the string.
+#1st exercise\
+#input user's first name and prints its length
+name= input("Enter your name:")
+print("Length of your name is:",len(name))
+#find occurance of a specific word in the string
+string="My $ name $ is $ Fareeha $ Malik$"
+print(string.count("$"))
+#2nd exercise by the use of ifelif-else conditional statment
+marks= int(input("Ente student's marks:"))
+print(marks)
+
+if(marks>=90):
+   Grade="A"
+elif(marks<90 and marks>=80):
+   Grade="B"
+elif(marks<80 and marks>=70):
+    Grade="C"
+else:
+  Grade="D"
+print("Grade of the student is:",Grade)
